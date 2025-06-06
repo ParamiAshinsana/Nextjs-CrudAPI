@@ -52,7 +52,7 @@ crud-nextjs/
 │   ├── api/
 │   │   └── users/
 │   │       ├── index.js       # Handles GET (all), POST (create)
-│   │       └── [id].js        # Handles GET (single), PUT, DELETE
+│   │       └── id.js        # Handles GET (single), PUT, DELETE
 │   └── index.js               # (Optional) UI or testing page
 │
 ├── public/                    # Public assets
