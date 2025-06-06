@@ -38,3 +38,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+```bash
+crud-nextjs/
+│
+├── models/
+│   └── User.js                 # Mongoose model for user
+│
+├── lib/
+│   └── dbConnect.js           # MongoDB connection utility
+│
+├── pages/
+│   ├── api/
+│   │   └── users/
+│   │       ├── index.js       # Handles GET (all), POST (create)
+│   │       └── [id].js        # Handles GET (single), PUT, DELETE
+│   └── index.js               # (Optional) UI or testing page
+│
+├── public/                    # Public assets
+│
+├── styles/
+│   └── globals.css            # Global CSS (if any)
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── next.config.js
+
+```
